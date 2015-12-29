@@ -19,8 +19,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //[self XYRSACryptor];
-    
     [self encryptTest];
     
     [self mySignTest];
@@ -42,7 +40,7 @@
     
     NSString *rt = [cryptor rsaEncryptString:test];
     
-    NSString *drt = [cryptor rsaDecryptString:@"VDMHjAYexAkba9tyc6iMsNGbI8R7Jt3pFZA03VpUhl5Dd2aTDExjgbJzlumDk//iiRfpmn0naPcwsWgVU0Qh8FLFq0qAestpN/nXAIZ6UxkC8+DuDcIrjSoykqJ+KfVTnCb4f68FGB7XTbCH60ihGdCTuzPw0PZ501Bwc6vnONg="];
+    NSString *drt = [cryptor rsaDecryptString:rt];
     
     NSLog(@"%@", drt);
 }
